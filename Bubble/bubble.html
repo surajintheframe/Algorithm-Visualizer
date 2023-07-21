@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Bubble</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400;1,700&family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="new.css">
+</head>
+
+<body>
+    <nav>
+        <li>
+            <ul><a href="../index.html">Algorithm Visualizer</a></ul> <img width="30" height="30"
+                src="https://img.icons8.com/ios-filled/50/FFFFFF/serial-tasks.png" alt="serial-tasks" />
+        </li>
+        <li>
+            <ul><a href="../Merge/Merge.html">Merge</a></ul>
+            <ul><a href="../Insertion/InsertionIndex.html">Insertion</a></ul>
+            <ul><a href="#theory">Bubble</a></ul>
+            <ul><a href="../Heap/heap.html">Heap</a></ul>
+            <ul><a href="../QuickRepo-master/quick.html">Quick</a></ul>
+            <ul><a href="#">Dijkstra</a></ul>
+        </li>
+    </nav>
+    <section class="theory">
+
+        <div class="intro">
+            <h1>Bubble Sort</h1>
+            <p class="introtext">Bubble sort is a type of sorting algorithm you can use to arrange a set of values in
+                ascending order.
+                If you want, you can also implement bubble sort to sort the values in descending order.
+                A real-world example of a bubble sort algorithm is how the contact list on your phone is sorted in
+                alphabetical order.
+            </p>
+        </div>
+        <div class="svgimage">
+            <a href="#visualize">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/circled-chevron-right.png"
+                    alt="circled-chevron-right" />
+            </a>
+
+            <p>Continue to Visualizer</p>
+        </div>
+
+    </section>
+
+
+    <section class="visualizer" id="visualize">
+        <div class="container1">
+            <div id="container"></div>
+
+            <div class="btn">
+                <input type="text" id="array-input" placeholder="Enter array values (optional) ">
+                <div class="btn_1">
+                    <!-- <input type="range" id="array-size-input" min="5" max="22" value="15"> -->
+                </div>
+                <div class="btn_2">
+                    <button onclick="init()">New Array</button>
+                    <button onclick="play()">Start sort</button>
+                </div>
+            </div>
+    </section>
+
+
+    <script src="bubble.js"></script>
+</body>
+
+</html>

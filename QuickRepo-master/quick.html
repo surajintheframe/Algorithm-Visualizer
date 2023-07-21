@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Sort Visualization</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400;1,700&family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="quick.css">
+</head>
+
+<body>
+  <nav>
+    <li>
+      <ul><a href="../index.html">Algorithm Visualizer</a></ul> <img width="30" height="30"
+        src="https://img.icons8.com/ios-filled/50/FFFFFF/serial-tasks.png" alt="serial-tasks" />
+    </li>
+    <li>
+      <ul><a href="../Merge/Merge.html">Merge</a></ul>
+      <ul><a href="../Insertion/InsertionIndex.html">Insertion</a></ul>
+      <ul><a href="../Bubble/bubble.html">Bubble</a></ul>
+      <ul><a href="../Heap/heap.html">Heap</a></ul>
+      <ul><a href="#theory">Quick</a></ul>
+      <ul><a href="#">Dijkstra</a></ul>
+    </li>
+  </nav>
+  <section class="theory">
+
+    <div class="intro">
+      <h1>Quick Sort</h1>
+      <p class="introtext">QuickSort is a fast sorting algorithm based on divide and conquer. It selects a pivot,
+        partitions the array, and recursively sorts the sub-arrays. Efficient but requires careful pivot selection.</p>
+    </div>
+    <div class="svgimage">
+      <a href="#visualize">
+        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/circled-chevron-right.png"
+          alt="circled-chevron-right" />
+      </a>
+
+      <p>Continue to Visualizer</p>
+    </div>
+  </section>
+
+  <section class="visualizer" id="visualize">
+    <div class="container1">
+      <div class="container">
+        <div class="bars-container" id="barsContainer"></div>
+        <div class="buttons-container">
+          <button onclick="initializeGraph()">Initialize Graph</button>
+          <button onclick="startSort()">Start Sort</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="quick.js"></script>
+</body>
+
+</html>

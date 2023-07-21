@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head -->
+
+<head>
+
+    <!-- linking style.css -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400;1,700&family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="InsertionStyle.css" rel="stylesheet" />
+</head>
+
+<!-- body -->
+
+<body>
+    <nav>
+        <li>
+            <ul><a href="../index.html">Algorithm Visualizer</a></ul> <img width="30" height="30"
+                src="https://img.icons8.com/ios-filled/50/FFFFFF/serial-tasks.png" alt="serial-tasks" />
+        </li>
+        <li>
+            <ul><a href="../Merge/Merge.html">Merge</a></ul>
+            <ul><a href="#theory">Insertion</a></ul>
+            <ul><a href="../Bubble/bubble.html">Bubble</a></ul>
+            <ul><a href="../Heap/heap.html">Heap</a></ul>
+            <ul><a href="../QuickRepo-master/index.html">Quick</a></ul>
+            <ul><a href="#">Dijkstra</a></ul>
+        </li>
+    </nav>
+    <section class="theory">
+
+        <div class="intro">
+            <h1>Insertion Sort</h1>
+            <p class="introtext">Insertion Sort is a sorting algorithm that gradually builds a sorted list by picking
+                elements
+                one by one and inserting them into their correct positions, making it simple and effective for small
+                datasets.</p>
+        </div>
+        <div class="svgimage">
+            <a href="#visualize">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/circled-chevron-right.png"
+                    alt="circled-chevron-right" />
+            </a>
+
+            <p>Continue to Visualizer</p>
+        </div>
+
+    </section>
+    <section class="visualizer" id="visualize">
+        <div class="container">
+            <section class="data-container"></section>
+            <section id="ele"></section>
+            <div style="margin: auto; width: fit-content;">
+
+                <input type="range" min="5" max="22" value="15">
+                <!-- "Generate New Array" button -->
+                <button class="btn1" onclick="generate()" id="Button1">Generate New Array</button>
+
+                <!-- "Insertion Sort" button -->
+                <button class="btn2" onclick="InsertionSort(),disable()" id="Button2">Insertion Sort</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+<!-- linking index.js -->
+<script src="InsertionScript.js"></script>
+
+</html>

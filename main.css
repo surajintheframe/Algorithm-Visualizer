@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Elianto Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Elianto Regular"), url("Elianto-Regular.woff") format("woff");
+}
+:root{
+  --primary-color-theme:rgb(78, 99, 117);
+}
+body{
+  background-color: white;
+  overflow: hidden;
+}
+.heading{
+    font-family:'Elianto Regular';
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+nav {
+  position: relative;
+  /* border: 1px solid red; */
+  height: 8vh;
+  padding: auto;
+  width: 100%;
+  background-color: rgba(162, 169, 173, 0.9);
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  color: white;
+  font-size: 1.3em;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+nav li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 5%;
+  /* margin: auto 3%; */
+}
+nav li ul,
+a {
+  cursor: pointer;
+  margin: 14px;
+}
+nav li ul a:hover {
+  color: black;
+}
+.example {
+  color: black;
+}
+p {
+  font-family: "Lato";
+  font-size: 1.8em;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+h1{
+  font-size: 4em;
+}
+.home {
+  /* border: 1px solid red; */
+  animation: animate 0.3s ;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 92vh;
+}
+.container{
+  /* position: absolute; */
+  height: 92%;
+  /* border: 1px solid blue; */
+  border-radius: 10px;
+  width: 60vh;
+  padding: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(225, 229, 231, 0.474);
+}
+.container > *{
+  margin: 25px;
+  /* backdrop-filter:blur(2px); */
+}
+/* .home > *{ */
+  /* margin: 30px; Access child this way*/
+/* } */
+.cool_logo img{
+  height: 30vh;
+  width: auto;
+}
+/*Animations*/
+@keyframes animate{
+  0% {
+    opacity: 0%;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

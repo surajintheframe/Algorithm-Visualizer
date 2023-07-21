@@ -1,0 +1,246 @@
+:root {
+  --primary-color-container: white;
+  /* --primary-color-background: #e4e5e9; */
+  --primary-color-button: rgba(128, 128, 128, 0.147);
+  --primary-color-button: white;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden;
+        scroll-behavior: smooth; */
+  font-family: "Lato", sans-serif;
+}
+nav {
+  position: absolute;
+  /* border: 1px solid red; */
+  height: 8vh;
+  padding: auto;
+  width: 100%;
+  background-color: rgba(162, 169, 173, 0.9);
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  color: white;
+  font-size: 1.3em;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+nav li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 5%;
+  /* margin: auto 3%; */
+}
+nav li ul,
+a {
+  cursor: pointer;
+  margin: 14px;
+}
+nav li ul a:hover {
+  color: black;
+}
+
+p {
+  font-family: "Lato";
+  font-size: x-large;
+  font-weight: 400;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#particles-js {
+  position: fixed;
+  /* left: 0; */
+  top: 100%;
+  height: 100vh;
+  /* bottom: 0; */
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+.svgimage {
+  /* border: 1px solid red; */
+  transform: translate(-16vh, 50vh);
+  min-width: 20vw;
+  height: 12vh;
+  animation: animateright 1.3s ease-out;
+}
+.svgimage img{
+  transition: all 0.4s;
+}
+.svgimage img:hover {
+  transform: scale(1.2);
+}
+
+.intro {
+  /* border: 1px solid red; */
+  margin-right: 31%;
+}
+.intro h1 {
+  margin: 40px;
+  animation: animateleft 1.3s ease-out;
+}
+.intro .introtext {
+  margin: auto 40px;
+  animation: animatetop 1.4s ease-out;
+}
+.theory {
+  /* animation: animate 0.6s ; */
+  width: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+  /* margin: auto; */
+  padding: 5vw;
+  /*   
+        .introduction {
+          padding: 5vh;
+        } */
+}
+
+.mySlides {
+  display: none;
+}
+
+.visualizer {
+  height: 100vh;
+  background-color: rgba(162, 169, 173, 0.8);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+  height: 8%;
+  width: auto;
+  max-width: 90%;
+}
+/*Common For Container and Theory*/
+.container {
+  padding: 16%;
+  /* width: auto; */
+  /* height: 100%; */
+  margin: auto;
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+}
+.data-container {
+  width: 600px;
+  height: 364px;
+  position: relative;
+  margin-top: 300px;
+}
+
+.bar {
+  width: 28px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  transition: 0.2s all ease;
+}
+
+.bar__id {
+  position: absolute;
+  top: -24px;
+  width: 100%;
+  text-align: center;
+}
+.btn1 {
+  padding: 12px;
+  font-weight: bolder;
+  background-color: rgba(162, 169, 173, 0.3);
+  border-radius: 10px;
+  color: black;
+  font-size: 16px;
+  border: white;
+  margin-top: 30px;
+  margin-right: 1vw;
+}
+.btn2 {
+  padding: 12px;
+  font-weight: bolder;
+  background-color: rgba(162, 169, 173, 0.3);
+  border-radius: 10px;
+  color: black;
+  font-size: 16px;
+  border: white;
+  margin-top: 30px;
+}
+#ele {
+  text-align: center;
+  height: 35px;
+}
+h1{
+  font-size: 4em;
+}
+/* Animations */
+/* @keyframes animate{
+  0% {
+    opacity: 0%;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+} */
+@keyframes animateleft {
+  0% {
+    transform: translate(-100vw);
+  }
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Animations */
+@keyframes animatetop {
+  0% {
+    transform: translateY(100vw);
+  }
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Animations */
+@keyframes animateright {
+  0% {
+    transform: translate(160vh, 50vh);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(-16vh, 50vh);
+    opacity: 1;
+  }
+}
+
