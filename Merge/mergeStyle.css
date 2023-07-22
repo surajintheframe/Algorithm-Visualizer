@@ -3,6 +3,7 @@
   /* --primary-color-background: #e4e5e9; */
   --primary-color-button: rgba(128, 128, 128, 0.147);
   --primary-color-button: white;
+  --primary-color-theme:rgb(78, 99, 117);
 }
 * {
   box-sizing: border-box;
@@ -18,7 +19,7 @@ nav {
   height: 8vh;
   padding: auto;
   width: 100%;
-  background-color: rgba(162, 169, 173, 0.9);
+  background-color: var(--primary-color-theme);
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -41,6 +42,7 @@ nav li ul,
 a {
   cursor: pointer;
   margin: 14px;
+  font-size: 1.2em;
 }
 nav li ul a:hover{
   color: black;

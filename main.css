@@ -14,6 +14,9 @@ body{
 .heading{
     font-family:'Elianto Regular';
 }
+#viz{
+  color: var(--primary-color-theme);
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,15 +29,16 @@ nav {
   height: 8vh;
   padding: auto;
   width: 100%;
-  background-color: rgba(162, 169, 173, 0.9);
+  background-color: var(--primary-color-theme);
   display: flex;
   justify-content: space-between;
   list-style: none;
   align-items: center;
   color: white;
-  font-size: 1.3em;
+  /* font-size: 1.5em; */
 }
 a {
+  
   text-decoration: none;
   color: white;
 }
@@ -49,13 +53,15 @@ nav li ul,
 a {
   cursor: pointer;
   margin: 14px;
+  font-size: 1.4em;
+  
 }
 nav li ul a:hover {
   color: black;
 }
-.example {
+/* .example {
   color: black;
-}
+} */
 p {
   font-family: "Lato";
   font-size: 1.8em;
@@ -96,7 +102,7 @@ h1{
   background-color: rgba(225, 229, 231, 0.474);
 }
 .container > *{
-  margin: 25px;
+  margin: 12px;
   /* backdrop-filter:blur(2px); */
 }
 /* .home > *{ */
@@ -111,7 +117,7 @@ h1{
   0% {
     opacity: 0%;
   }
-  80% {
+  70% {
     opacity: 0.3;
   }
   100% {
