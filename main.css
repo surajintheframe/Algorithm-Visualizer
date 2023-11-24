@@ -54,6 +54,7 @@ a {
   cursor: pointer;
   margin: 14px;
   font-size: 1.4em;
+  transition: all 0.3s;
   
 }
 nav li ul a:hover {

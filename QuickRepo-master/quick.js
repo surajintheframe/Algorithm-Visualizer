@@ -19,6 +19,7 @@ function startSort() {
   if (initialized && !sorted) {
     quickSort(array, 0, array.length - 1);
     sorted = true;
+
   }
   
 }
@@ -40,11 +41,13 @@ async function quickSort(arr, start, end) {
 async function partition(arr, start, end) {
   const pivot = arr[end];
   let pivotIndex = start;
+  
 
   for (let i = start; i < end; i++) {
     if (arr[i] < pivot) {
       await swap(arr, i, pivotIndex);
       pivotIndex++;
+      
     }
   }
 
@@ -58,24 +61,28 @@ async function swap(arr, a, b) {
   await sleep(100); // Delay to visualize the sorting process
   [arr[a], arr[b]] = [arr[b], arr[a]];
   updateVisualization(arr);
+
 }
 
 // Function to update the visualization
 function updateVisualization(arr) {
   const barsContainer = document.getElementById('barsContainer');
   barsContainer.innerHTML = '';
+  
 
   arr.forEach((num) => {
     const bar = document.createElement('div');
     bar.className = 'bar';
     bar.style.height = num * 2 + 'px'; // Adjusting the height of the bars
     barsContainer.appendChild(bar);
+    
   });
 }
 
 // Utility function for delaying execution
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
+  
 }
 
 // Function to generate an array of random numbers
